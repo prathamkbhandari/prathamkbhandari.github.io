@@ -1,0 +1,172 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+}
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+li{
+    font-weight: 600;
+    padding: 3em;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+
+    
+}
+h4{
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+#main-section{
+
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    #main-section{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+  }
+#astro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding-left: 40%;
+    color: darkslategrey;
+    font-weight: 800;
+
+}
+
+#Astroman{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    width: 300px;
+    padding-left: 40%;
+    color: darkslategrey;
+}
+@media only screen and (max-width: 768px) {
+    #Astroman{
+       margin-left:-100px ;   
+    }
+}
+.image{
+    border-radius: 10%;
+    height: 25em;
+
+    
+}
+.image:hover{
+    transition:.5s all ease-in-out;
+    transform: scale(1.2);
+}
+#about-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#gallery-section{
+
+    height: 100vh;
+
+}
+a{
+    text-decoration: none;
+    color: darkslategrey;
+    
+}
+.top{
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5em;
+    width: 3.5em;
+    position: fixed;
+    right: 2%;
+    top:90%;
+    color:darkslategrey;
+}
+#top{
+    padding: auto;
+    rotate: top;
+    font-size: 2em;
+    font-weight: bold;
+    transform: rotate(-90deg);
+}
+h2{
+    color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    text-decoration: underline;
+    
+}
+#gallery-group{
+    display: grid;
+    grid: repeat(2, 22em) / auto-flow 22em;
+    justify-content: center;
+    align-items: center;
+    
+}
+#img-avf:hover{
+    transition:.5s all ease-in-out;
+    transform: rotate(10deg) scale(1.2);
+}
+
+#img-avf{
+    height: 20em;
+    width: 20em;
+    border-radius: 25px;
+
+}
+
+
+
+#about-us{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   width: 25vw;
+   height: 80vh;
+   overflow: hidden;
+   line-height: 200%;
+   text-align: center;
+   text-align-last: center;
+}
+footer{
+    padding-top: 2%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+}
+@media only screen and (max-width: 768px) {
+    #gallery-group{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+}
